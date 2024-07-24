@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+form{
+    border: 2px solid rgb(122, 122, 122);
+    width: 80%;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+button{
+    margin: 10px;
+}
+
+.tColor{
+    font-size: 30px;
+}
+
+/* .ranges{
+    display: flex;
+    flex-direction: column;
+} */
+</style>
+
+</head>
+
+<body>
+
+<!-- //////////////////////form/////////////////////////////////////////// -->
+    <form action="">
+
+        <h1>Change Email Address</h1>
+
+        <input type="text" placeholder="username" required> <br>
+
+        <input type="email" placeholder="Email"   pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.(com|net|org)$"required> <br>
+
+        <button>Change</button>
+
+    </form>
+
+    <!-- ///////     text color ...///////////////////////////////// -->
+
+<div class="ranges">
+   <div style="display: flex;">  <p>RED</p><input type="range"  min="0"  max="255" id="inp1"> </div>
+   <div style="display: flex;"><p>GREEN</p> <input type="range" min="0" max="255" name="" id="inp2">  </div>
+   <div style="display: flex;"> <p>BLUE</p><input type="range" min="0" max="255" name="" id="inp3">  </div>
+
+</div>
+
+    <p class="tColor">Lorem ipsum dolor sit, amet consectetur  <br>adipisicing elit. Atque necessitatibusbr <br> doloribus ipsum autem nulla ut?</p>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

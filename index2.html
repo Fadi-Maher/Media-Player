@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p:hover {
+            animation: zoomIn 0.3s ease;
+            background-color: wheat;
+              cursor: pointer;
+        }
+
+        button:hover {
+            animation: zoomIn 0.3s ease;
+            background-color: wheat;
+            cursor: pointer;
+        }
+
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+
+
+
+
+        .p1 {
+            background-color: rgb(185, 180, 180);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .p2 {
+            background-color: rgb(226, 210, 210);
+             font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .p3 {
+            background-color: rgb(185, 180, 180);
+             font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .pcon {
+            width: 40%;
+            margin: auto;
+            border: 2px black solid;
+        }
+
+        .firscomp {
+            border: 2px solid rgb(61, 54, 54);
+            width: 30%;
+            margin: auto;
+            height: 60vh;
+            background-color: rgb(17, 17, 17);
+            box-shadow: 0 0 30px rgba(44, 6, 134, 2);
+            padding: 10px;
+
+
+        }
+
+        #image {
+            display: block;
+            margin: auto;
+            width: 65%;
+            height: 60%;
+            border-radius: 50%;
+        }
+
+        .btns {
+
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+
+            margin: 20px;
+        }
+
+        .ranges {
+            display: flex;
+            justify-content: center;
+            column-gap: 20px;
+            cursor: pointer;
+              
+        }
+
+        button {
+
+            font-size: 20px;
+            color: black;
+            border-radius: 5px;
+            margin: 3px;
+            padding: 5px;
+        }
+
+        .secondcomp {
+            box-shadow: 0 0 30px rgba(44, 6, 134, 2);
+            width: 30%;
+            margin: auto;
+            border: 2px white solid;
+             padding: 10px;
+        }
+         input[type="range"] {
+    accent-color: black;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+    <audio id="audio1" controls >
+        <source src="./1.mp3" id="mp3">
+        <source src="./1.ogg" id="ogg">
+    </audio>
+
+    <audio id="audio2" >
+        <source src="./2.mp3" id="mp32">
+        <source src="./2.ogg" id="ogg2">
+    </audio>
+
+    <audio id="audio3" >
+        <source src="./3.mp3" id="mp33">
+        <source src="./3.ogg" id="ogg3">
+    </audio>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="firscomp">
+        <img src="./download (1).jfif" id="image" alt="">
+
+        <div class="btns">
+             <button id="playBtn"><i style='font-size:px' class='fas'>&#xf04b;</i> </button>
+            <button id="pauseBtn"><i class="fa fa-play-circle fa-1x"></i></button>
+            <button id="muteBtn"><i class='fas fa-volume-mute' style='font-size:24px'></i> </button>
+            <button id="resetBtn"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+           
+        </div>
+
+        <div class="ranges">
+             <label  style="color: whitesmoke;  "><i class="fa fa-clock-o" style="font-size:22px"></i><label><input type="range" >
+            <input class="accent"  type="range"> <label style="color:whitesmoke;"><i class='fas fa-volume-up' style='font-size:24px'></i></label>
+        </div>
+    </section>
+
+    <!-- ///////////////////////////////////////////////////////////////?///////////////// -->
+
+
+    <section class="secondcomp">
+
+        <p id="songName1" class="p1">Ana baatrflek</p>
+        <p id="songName2" class="p2">Eldonia</p>
+        <p id="songName3" class="p3">Ymken kheer </p>
+
+    </section>
+
+
+    <script src="./main2.js"></script>
+
+   
+</body>
+
+</html>
